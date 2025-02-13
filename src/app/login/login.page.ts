@@ -6,14 +6,19 @@ import { IonContent, IonHeader, IonTitle, IonToolbar,   IonButton,
   IonCardContent,
   IonCardHeader,
   IonCardSubtitle,
-  IonCardTitle, IonInput, IonImg} from '@ionic/angular/standalone';
+
+
+  IonCardTitle, IonInput, IonImg, IonInputPasswordToggle, IonText} from '@ionic/angular/standalone';
+
 
 @Component({
   selector: 'app-login',
   templateUrl: './login.page.html',
   styleUrls: ['./login.page.scss'],
   standalone: true,
-  imports: [IonContent, IonImg, IonHeader, IonTitle, IonToolbar, CommonModule, FormsModule, IonButton, IonCard, IonCardContent, IonCardHeader, IonCardSubtitle, IonCardTitle, IonInput]
+
+  imports: [IonContent, IonImg, IonText, IonHeader, IonInputPasswordToggle, IonTitle, IonToolbar, CommonModule, FormsModule, IonButton, IonCard, IonCardContent, IonCardHeader, IonCardSubtitle, IonCardTitle, IonInput]
+
 })
 export class LoginPage implements OnInit {
 
@@ -22,4 +27,6 @@ export class LoginPage implements OnInit {
   ngOnInit() {
   }
 
+
 }
+
